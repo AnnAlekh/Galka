@@ -1,0 +1,18 @@
+#Python
+__pycache__/
+*.pyc
+venv/
+
+#Buildozer / APK
+bin/
+.buildozer/
+*.apk
+*.aab
+
+#IDE
+.idea/
+
+# OS
+
+.DS_Store
+Thumbs.db
