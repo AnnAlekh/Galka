@@ -1,0 +1,18 @@
+# docker-compose.yml
+
+services:
+  app:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: GALKA_container
+    volumes:
+      - .:/app
+      - ./data:/app/data
+    working_dir: /app
+    environment:
+      - PYTHONUNBUFFERED=1
+      - ENVIRONMENT=development
+    ports:
+      - "8000:8000"
+    command: python main.py
